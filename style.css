@@ -1,20 +1,28 @@
-body {
-  font-family: 'Segoe UI', sans-serif;
+/* Reset base styles */
+* {
   margin: 0;
   padding: 0;
-  background-color: #fff;
-  color: #333;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+  line-height: 1.6;
 }
 
 header {
   background-color: #f8f8f8;
   padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .logo-title {
@@ -23,22 +31,30 @@ header {
 }
 
 .logo {
-  height: 50px;
-  margin-right: 0.75rem;
+  height: 48px;
+  margin-right: 12px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: #222;
 }
 
 nav ul {
   list-style: none;
   display: flex;
   gap: 1.5rem;
-  margin: 0;
-  padding: 0;
 }
 
 nav a {
   text-decoration: none;
   color: #2e86de;
   font-weight: 500;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
 
 .divider {
@@ -56,6 +72,9 @@ nav a {
   width: 100%;
   max-width: 1000px;
   height: auto;
+  display: block;
+  margin: 0 auto;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  object-fit: contain;
 }
