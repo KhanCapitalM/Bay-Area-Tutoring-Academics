@@ -15,7 +15,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .logo-title {
@@ -42,13 +41,9 @@ nav a {
   font-weight: 500;
 }
 
-nav a:hover {
-  text-decoration: underline;
-}
-
 .divider {
-  border: 0;
-  border-top: 1px solid #ccc;
+  border: none;
+  border-top: 1px solid #ddd;
   margin: 0;
 }
 
@@ -57,9 +52,10 @@ nav a:hover {
   padding: 2rem;
 }
 
-.hero-image-only {
+.hero-img {
   width: 100%;
-  max-width: 900px;
+  max-width: 1000px;
   height: auto;
-  border-radius: 8px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
